@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Yelisberth ❤️</title>
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    .overlay {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      width: 100%;
+      pointer-events: none;
+    }
+    h1 {
+      margin-top: 20px;
+      font-size: 2em;
+    }
+    video {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 50px auto;
+    }
+    .hearts {
+      font-size: 3em;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay hearts">❤️❤️</div>
+  <h1>Para Yelisberth ❤️</h1>
+
+  <video controls autoplay loop muted>
+    <source src="tu-video.mp4" type="video/mp4">
+    <source src="tu-video.webm" type="video/webm">
+    Tu navegador no soporta videos HTML5.
+  </video>
+
+  <div class="overlay hearts">❤️❤️</div>
+
+  <script>
+    const hearts = document.querySelectorAll('.hearts');
+    hearts.forEach((el, i) => {
+      el.style.top = `${20 + i * 80}px`;
+    });
+  </script>
+</body>
+</html>
